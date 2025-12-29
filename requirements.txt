@@ -1,0 +1,5 @@
+django
+djangorestframework
+uvicorn
+gunicorn
+django-prometheus
