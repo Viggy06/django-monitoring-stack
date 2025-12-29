@@ -1,0 +1,37 @@
+services:
+  backend:
+    build: . #dockerfile location
+    container_name: django-backend
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.54.0
+    container_name: prometheus
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+    ports:
+      - "9090:9090"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  node-exporter:
+    image: prom/node-exporter:v1.8.2
+    container_name: node-exporter
+    pid: host
+    volumes:
+      - /:/host:ro,rslave
+    command:
+      - "--path.rootfs=/host"
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+
+volumes:
+  prometheus-data:
