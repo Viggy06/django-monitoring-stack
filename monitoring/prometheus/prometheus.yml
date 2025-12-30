@@ -26,14 +26,14 @@ scrape_configs:
     # scheme defaults to 'http'.
 
     static_configs:
-      - targets: ["localhost:9090"]
+      - targets: ["localhost:9090"] #service name
 
   - job_name: "django-instance"
 
     static_configs:
-      - targets: ["localhost:8000"]
+      - targets: ["backend:8000"]
 
   - job_name: "node-exporter"
     static_configs:
       - targets:
-          - "localhost:9100" #change this later
+          - "node-exporter:9100" #change this later
