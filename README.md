@@ -62,10 +62,6 @@
           <img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/be976d94-ebd6-4cc6-970a-d256d07f64a9" />
           Follow the same step to add django api dashboard with Dashboard ID **17658**
       
-      7.Final Output
-        <img width="1884" height="819" alt="grafana-stress-test-ss" src="https://github.com/user-attachments/assets/1c0ea834-3aa2-4a28-8adf-5650fe1d7f6a" />
-        <img width="1883" height="944" alt="django-apis-monitoring-dashboard" src="https://github.com/user-attachments/assets/1cdb38ee-0dee-494d-8b64-531b0f6ed9c1" />
-      
 # Usage
   We can interact with the API using any HTTP client. A Postman collection is included in the repository (student-api.postman_collection.json) for the convenience.
   ## API Endpoints
