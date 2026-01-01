@@ -1,16 +1,25 @@
 # Django Monitoring Stack (Django-RestAPIs + Prometheus + Grafana)
   This project is fully functional Rest API for managing student apis with monitoring observality, built with django, grafana, prometheus
 ##  Features
-    -  CRUD REST API: Fully **CRUD functionality** (Create, Read, Update, Delete) for student records, built using and **Django REST Framework**
-    -  Database: Uses **SQLite** for quick setup and ease of development
-    -  Observability & Monitoring: 
-        -  **Prometheus**
-            -  Collects metrics from the Django application (`/metrics`)
-            -  Scrapes host-level metrics via Node Exporter
-        -  **Grafana**
-            - Visualizes application and system metrics
-            - Supports dashboards for Django and Node Exporter
-        -  Containerization:  Fully containerized with Docker and Docker Compose for easy setup and consistent development environments.
+- **CRUD REST API**
+  - Full CRUD functionality (Create, Read, Update, Delete) for student records
+  - Built using **Django REST Framework**
+
+- **Database**
+  - Uses **SQLite** for quick setup and ease of development
+
+- **Observability & Monitoring**
+  - **Prometheus**
+    - Collects metrics from the Django application (`/metrics`)
+    - Scrapes host-level metrics via Node Exporter
+  - **Grafana**
+    - Visualizes application and system metrics
+    - Supports dashboards for Django and Node Exporter
+
+- **Containerization**
+  - Fully containerized using **Docker** and **Docker Compose**
+  - Enables easy setup and consistent development environments
+
 
 ## Prerequisites
   -  [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
