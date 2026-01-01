@@ -5,7 +5,7 @@
   - Full CRUD functionality (Create, Read, Update, Delete) for student records
   - Built using **Django REST Framework**
 - **Database**
-  - Uses **SQLite** for quick setup and ease of development
+  - We will use **PostgresSQL** DB for storing data.
 - **Observability & Monitoring**
   - **Prometheus**
     - Collects metrics from the Django application (`/metrics`)
@@ -15,8 +15,7 @@
     - Supports dashboards for Django and Node Exporter
 - **Containerization**
   - Fully containerized using **Docker** and **Docker Compose**
-  - Enables easy setup and consistent development environments
-
+  
 ## Prerequisites
   -  [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
@@ -36,22 +35,26 @@
   - Navigate to http://localhost:3000/ (grafana-UI)) and http://localhost:9090 (prometheus-ui) to explore system resources, metrics and logs for the application
   
 ## Installation and Setup
-  1. ### Clone the repository:
+  1. ***Clone the repository:***
       ```bash
        git clone <your-repository-url>
        cd django-monitoring-stack
      ```
-  2. ### Adding a user to the docker group allows them to run Docker without sudo.
+  2. ***Configure Environment***: Create a .env file by copying the provided dummy file. The default values are configured to work with the Docker Compose setup.
+       ```bash
+          cp .env.dummy .env
+       ```
+  3. ***Adding a user to the docker group allows them to run Docker without sudo.***
       ```bash
         sudo usermod -aG docker ubuntu
         newgrp docker
       ```
-  3. ### Now run docker compose command
+  4. ***Now run docker compose command***
       ```bash
         docker compose up -d --build
         docker ps
       ```
-  4. ### You need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -
+  5. ***You need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -***
     
       1. Create your username and password 
          <img width="1909" height="906" alt="grafana_1" src="https://github.com/user-attachments/assets/640ec852-36b5-4815-882e-469afd95d521" />
