@@ -22,17 +22,17 @@
 
 ## Installation and Setup
   1. ### Clone the repository:
-     1. ```bash
+      ```bash
        git clone <your-repository-url>
        cd django-monitoring-stack
      ```
   2. ### Adding a user to the docker group allows them to run Docker without sudo.
-    1.  ```bash
+      ```bash
         sudo usermod -aG docker ubuntu
         newgrp docker
       ```
   3. ### Now run docker compose command
-    1.  ```bash
+      ```bash
         docker compose up -d --build
         docker ps
       ```
