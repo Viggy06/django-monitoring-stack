@@ -78,19 +78,22 @@
   - Navigate to http://localhost:3000/ (grafana-UI)) and http://localhost:9090 (prometheus-ui) to explore system resources, metrics and logs for the application
 
 # Screenshots from my implemented project
-  Prometheus Configured
+  ### Prometheus Configured
   <img width="1916" height="648" alt="prometheus-configured-ui" src="https://github.com/user-attachments/assets/c5937caf-bf33-43dc-b563-30d26097fec7" />
 
-  Node-exporter Configured
+  ### Prometheus-Targets
+  <img width="1910" height="908" alt="prometheus-targets" src="https://github.com/user-attachments/assets/1191d412-598f-4f0d-bd64-a6ac394e8241" />
+
+  ### Node-exporter Configured
   <img width="1916" height="648" alt="node-exporter-configured-ui" src="https://github.com/user-attachments/assets/7ada4ff7-b0e7-4e25-b121-ece111809abe" />
-  
-  Django-Metrics exposed using django-prometheus
+
+  ### Django-Metrics exposed using django-prometheus
   <img width="1885" height="648" alt="django-metrics-exposed" src="https://github.com/user-attachments/assets/71c9af27-a7ec-4982-a47b-4f445719ca97" />
 
-  Django-Apis-Monitoring-Dashboard
+  ### Django-Apis-Monitoring-Dashboard
   <img width="1883" height="944" alt="django-apis-monitoring-dashboard" src="https://github.com/user-attachments/assets/ac5a7b9c-b36d-48e8-8f58-314b8744e666" />
 
-  Grafana Dashboard with system metrics
+  ### Grafana Dashboard with system metrics
   <img width="1884" height="819" alt="grafana-stress-test-ss" src="https://github.com/user-attachments/assets/42f5f01e-d751-4edc-8ad8-b414ae7e9cd1" />
 
   
