@@ -30,16 +30,19 @@
      git clone <your-repository-url>
      cd django-monitoring-stack
      ```
+     
   2. Adding a user to the docker group allows them to run Docker without sudo.
     ```bash
       sudo usermod -aG docker ubuntu
       newgrp docker
     ```
+    
   3. Now run docker compose command
     ```bash
       docker compose up -d --build
-      you can check running container using command - docker ps
+      to check container use - docker ps
     ```
+    
   4. You need to add data source and dashboard for node-exporter and django api 
      To configure this in grafana follow the steps given -
     
