@@ -3,3 +3,4 @@ djangorestframework
 uvicorn
 gunicorn
 django-prometheus
+psycopg2-binary

@@ -1,4 +1,6 @@
 .dockerignore
+.env
+.env.dummy
 docker-compose.yml
 __pycache__/
 *.py[cod]

@@ -1,9 +1,26 @@
 services:
+  postgres:
+    image: postgres:14.20-trixie
+    container_name: postgres
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
   backend:
     build: . #dockerfile location
     container_name: django-backend
     ports:
       - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      -  postgres
     restart: unless-stopped
 
   prometheus:
@@ -47,3 +64,4 @@ services:
 volumes:
   prometheus-data:
   grafana-data:
+  postgres-data:
