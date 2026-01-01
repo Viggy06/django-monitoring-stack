@@ -20,6 +20,21 @@
 ## Prerequisites
   -  [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
+# Usage
+  We can interact with the API using any HTTP client. A Postman collection is included in the repository (student-api.postman_collection.json) for the convenience.
+  ## API Endpoints
+
+| Method | Endpoint                   | Description                   |
+|-------:|----------------------------|-------------------------------|
+| POST   | /api/v1/students           | Creates a new student         |
+| GET    | /api/v1/students           | Lists all students            |
+| GET    | /api/v1/students/{id}      | Retrieves a single student    |
+| PUT    | /api/v1/students/{id}      | Updates an existing student   |
+| DELETE | /api/v1/students/{id}      | Deletes a student             |
+
+# Viewing Observability Data
+  - Navigate to http://localhost:3000/ (grafana-UI)) and http://localhost:9090 (prometheus-ui) to explore system resources, metrics and logs for the application
+  
 ## Installation and Setup
   1. ### Clone the repository:
       ```bash
@@ -61,21 +76,6 @@
           <img width="1746" height="882" alt="image" src="https://github.com/user-attachments/assets/a4a93f25-20f2-4140-8e15-5152cee65545" />
           <img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/be976d94-ebd6-4cc6-970a-d256d07f64a9" />
           Follow the same step to add django api dashboard with Dashboard ID **17658**
-      
-# Usage
-  We can interact with the API using any HTTP client. A Postman collection is included in the repository (student-api.postman_collection.json) for the convenience.
-  ## API Endpoints
-
-| Method | Endpoint                   | Description                   |
-|-------:|----------------------------|-------------------------------|
-| POST   | /api/v1/students           | Creates a new student         |
-| GET    | /api/v1/students           | Lists all students            |
-| GET    | /api/v1/students/{id}      | Retrieves a single student    |
-| PUT    | /api/v1/students/{id}      | Updates an existing student   |
-| DELETE | /api/v1/students/{id}      | Deletes a student             |
-
-# Viewing Observability Data
-  - Navigate to http://localhost:3000/ (grafana-UI)) and http://localhost:9090 (prometheus-ui) to explore system resources, metrics and logs for the application
 
 # Screenshots from my implemented project
   ### Prometheus Configured
