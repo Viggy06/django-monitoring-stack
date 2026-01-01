@@ -21,28 +21,28 @@
   -  [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
 ## Installation and Setup
-  1. Clone the repository:
-     ```bash
-     git clone <your-repository-url>
-     cd django-monitoring-stack
+  1. ### Clone the repository:
+     1. ```bash
+       git clone <your-repository-url>
+       cd django-monitoring-stack
      ```
-  2. Adding a user to the docker group allows them to run Docker without sudo.
-    ```bash
-      sudo usermod -aG docker ubuntu
-      newgrp docker
-    ```
-  3. Now run docker compose command
-    ```bash
-      docker compose up -d --build
-      docker ps
-    ```
-  4. You need to add data source and dashboard for node-exporter and django api 
-     To configure this in grafana follow the steps given -
+  2. ### Adding a user to the docker group allows them to run Docker without sudo.
+    1.  ```bash
+        sudo usermod -aG docker ubuntu
+        newgrp docker
+      ```
+  3. ### Now run docker compose command
+    1.  ```bash
+        docker compose up -d --build
+        docker ps
+      ```
+  4. ### You need to add data source and dashboard for node-exporter and django api 
+     ### To configure this in grafana follow the steps given -
     
       1. Create your username and password 
          <img width="1909" height="906" alt="grafana_1" src="https://github.com/user-attachments/assets/640ec852-36b5-4815-882e-469afd95d521" />
          
-      2. After login into the grafana click on **Connection** then **Data sources** and serach for prometheus and click on it and select **Add new data source**
+      2. After login into the grafana click on **Connection** then **Add new connection** and search for prometheus and click on it and select **Add new data   source**
          <img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/a0eb750a-cdd8-4c1e-a628-753b85d4dcc2" />
          <img width="1887" height="911" alt="image" src="https://github.com/user-attachments/assets/97b767f2-18b5-48e3-af63-cfa7c01b73d4" />
 
@@ -58,6 +58,7 @@
       6. To configure Node-exporter and Django API dashboards to need to import the dashboard.
           <img width="1911" height="954" alt="grafana_5" src="https://github.com/user-attachments/assets/d3a1e4b9-14d3-470e-ab13-ae3d321b3e52" />
           <img width="1887" height="899" alt="image" src="https://github.com/user-attachments/assets/a6e3ad68-b9d4-4524-ba85-d450d7283833" />
+          Import Dashboard Json file or Add Dasboard then click on Import
           <img width="1746" height="882" alt="image" src="https://github.com/user-attachments/assets/a4a93f25-20f2-4140-8e15-5152cee65545" />
           <img width="1913" height="912" alt="image" src="https://github.com/user-attachments/assets/be976d94-ebd6-4cc6-970a-d256d07f64a9" />
           Follow the same step to add django api dashboard with Dashboard ID **17658**
@@ -80,9 +81,6 @@
 
 # Viewing Observability Data
   - Navigate to http://localhost:3000/ (grafana-UI)) and http://localhost:9090 (prometheus-ui) to explore system resources, metrics and logs for the application
-
-# To stress test
-  We will use stress-
 
 # Screenshots from my implemented project
   Prometheus Configured
