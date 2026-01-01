@@ -4,10 +4,8 @@
 - **CRUD REST API**
   - Full CRUD functionality (Create, Read, Update, Delete) for student records
   - Built using **Django REST Framework**
-
 - **Database**
   - Uses **SQLite** for quick setup and ease of development
-
 - **Observability & Monitoring**
   - **Prometheus**
     - Collects metrics from the Django application (`/metrics`)
@@ -15,11 +13,9 @@
   - **Grafana**
     - Visualizes application and system metrics
     - Supports dashboards for Django and Node Exporter
-
 - **Containerization**
   - Fully containerized using **Docker** and **Docker Compose**
   - Enables easy setup and consistent development environments
-
 
 ## Prerequisites
   -  [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
@@ -30,19 +26,16 @@
      git clone <your-repository-url>
      cd django-monitoring-stack
      ```
-     
   2. Adding a user to the docker group allows them to run Docker without sudo.
     ```bash
       sudo usermod -aG docker ubuntu
       newgrp docker
     ```
-    
   3. Now run docker compose command
     ```bash
       docker compose up -d --build
-      to check container use - docker ps
+      docker ps
     ```
-    
   4. You need to add data source and dashboard for node-exporter and django api 
      To configure this in grafana follow the steps given -
     
