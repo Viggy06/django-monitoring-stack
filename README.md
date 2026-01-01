@@ -36,8 +36,7 @@
         docker compose up -d --build
         docker ps
       ```
-  4. ### You need to add data source and dashboard for node-exporter and django api 
-     ### To configure this in grafana follow the steps given -
+  4. ### You need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -
     
       1. Create your username and password 
          <img width="1909" height="906" alt="grafana_1" src="https://github.com/user-attachments/assets/640ec852-36b5-4815-882e-469afd95d521" />
