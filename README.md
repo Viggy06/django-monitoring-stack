@@ -44,17 +44,13 @@
        ```bash
           cp .env.dummy .env
        ```
-  3. ***Adding a user to the docker group allows them to run Docker without sudo.***
-      ```bash
-        sudo usermod -aG docker ubuntu
-        newgrp docker
-      ```
-  4. ***Now run docker compose command***
-      ```bash
-        docker compose up -d --build
-        docker ps
-      ```
-  5. ***We need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -***
+  3. ***Run the Entire Stack***: This single command will build the API container and start all the necessary services: the Student API, PostgreSQL, Prometheus, and Grafana.
+     ```bash
+          make up-all
+       ```
+     - Grafana will be available on http://localhost:3000/
+     - Prometheus will be available http://localhost:9090/
+  4. ***We need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -***
     
       1. Create username and password
          <img width="1909" height="906" alt="grafana_1" src="https://github.com/user-attachments/assets/640ec852-36b5-4815-882e-469afd95d521" />
