@@ -54,9 +54,9 @@
         docker compose up -d --build
         docker ps
       ```
-  5. ***You need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -***
+  5. ***We need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -***
     
-      1. Create your username and password 
+      1. Create username and password
          <img width="1909" height="906" alt="grafana_1" src="https://github.com/user-attachments/assets/640ec852-36b5-4815-882e-469afd95d521" />
          
       2. After login into the grafana click on **Connection** then **Add new connection** and search for prometheus and click on it and select **Add new data   source**
@@ -66,14 +66,15 @@
       3. Scroll-down to connection and add server url
          <img width="1917" height="529" alt="image" src="https://github.com/user-attachments/assets/08016020-f04a-420b-bb7f-2973b8151198" />
         
-      4. Then scroll-down further and click on **Save & Test**, if you should get **Successfully queried the Prometheus API.** it means configuration is working
+      4. Then scroll-down further and click on **Save & Test**, if this message comes **Successfully queried the Prometheus API.** it means configuration is working
          <img width="1858" height="879" alt="image" src="https://github.com/user-attachments/assets/ea96a74b-894e-44dd-987d-0e768e37f1db" />
       
-      5. Now you should able to see Prometheus in Data sources
+      5. Now we should able to see Prometheus in Data sources
          <img width="1905" height="623" alt="image" src="https://github.com/user-attachments/assets/37803a37-bd0e-478e-8617-49fe7d3d3861" />
       
-      6. To configure Node-exporter and Django API dashboards to need to import the dashboard.
+      6. To configure Node-exporter and Django API dashboards we need to import the dashboard.Select ***Create Dashboard***
           <img width="1911" height="954" alt="grafana_5" src="https://github.com/user-attachments/assets/d3a1e4b9-14d3-470e-ab13-ae3d321b3e52" />
+          Then ***Import Dashboard***
           <img width="1887" height="899" alt="image" src="https://github.com/user-attachments/assets/a6e3ad68-b9d4-4524-ba85-d450d7283833" />
           Import Dashboard Json file or Add Dasboard then click on Import
           <img width="1746" height="882" alt="image" src="https://github.com/user-attachments/assets/a4a93f25-20f2-4140-8e15-5152cee65545" />
