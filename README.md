@@ -44,7 +44,7 @@
        ```bash
           cp .env.dummy .env
        ```
-  3. ***Run the Entire Stack***: This single command will build the API container and start all the necessary services: the Student API, PostgreSQL, Prometheus, and Grafana.
+  3. ***Run the Entire Stack***: This single command will build the API container and start all the necessary services: the Student API, Docker, Docker Compose, PostgreSQL, Prometheus, and Grafana.
      ```bash
           make up-all
        ```
