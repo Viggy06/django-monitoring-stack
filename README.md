@@ -49,7 +49,7 @@
           make up-all
        ```
      - Grafana will be available on http://localhost:3000/
-     - Prometheus will be available http://localhost:9090/
+     - Prometheus will be available on http://localhost:9090/
   4. ***We need to add data source and dashboard for node-exporter and django api. To configure this in grafana follow the steps given -***
     
       1. Create username and password
