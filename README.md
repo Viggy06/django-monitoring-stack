@@ -17,7 +17,7 @@
   - Fully containerized using **Docker** and **Docker Compose**
   
 ## Prerequisites
-  -  [Docker](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
+  -  [Make](https://www.gnu.org/software/make/#download)
 
 # Usage
   We can interact with the API using any HTTP client. A Postman collection is included in the repository (student-api.postman_collection.json) for the convenience.
